@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --horizon-1-core: #2ecc71; /* Core survival - Stable Green */
+  --horizon-2-emerging: #3498db; /* Growth paths - Explorer Blue */
+  --horizon-3-visionary: #9b59b6; /* Future options - Visionary Purple */
+  --chaos-warning: #e74c3c; /* For when goals exceed 6! */
+
+  --palette-camouflage: #3b5948;
+  --palette-stealth: #708c7a;
+  --palette-weappon: #403c38;
+  --palette-lunette: #f2f2f2;
+  --palette-night-assault: #0d0d0d;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--palette-lunette);
+}

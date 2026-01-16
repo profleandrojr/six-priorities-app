@@ -1,6 +1,7 @@
 {
   "name": "six-priorities-app",
   "version": "0.0.0",
+  "author": "Leandro Junior Alves dos Santos",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

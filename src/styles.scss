@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
 :root {
   --horizon-1-core: #2ecc71; /* Core survival - Stable Green */
   --horizon-2-emerging: #3498db; /* Growth paths - Explorer Blue */
@@ -11,8 +13,45 @@
   --palette-night-assault: #0d0d0d;
 }
 
+/* GLOBAL RULES */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--palette-lunette);
+}
+
+p {
+  color: var(--palette-night-assault);
+}
+
+/* HEADER */
+.main-header {
+  width: 100%;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--palette-stealth);
+  padding: 0 2em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .sp-logo {
+  max-width: 44px;
+  margin: 0 4px;
+}
+
+.logo-container p {
+  color: var(--palette-lunette);
+  font-size: 1.4rem;
+}
+
+/* FONTS */
+.ms-madi-regular {
+  font-family: 'Ms Madi', cursive;
+  font-weight: 700;
+  font-style: normal;
 }

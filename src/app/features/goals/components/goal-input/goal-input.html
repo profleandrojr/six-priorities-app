@@ -1,0 +1,33 @@
+<div class="input-container">
+  <form [formGroup]="goalForm" (ngSubmit)="addGoal()">
+    <label>Goal Title</label>
+    <input formControlName="title" placeholder="e.g., Master React JS" />
+
+    <label>SMART Description</label>
+    <textarea
+      formControlName="smartDescription"
+      placeholder="Template: Action Verb + Measurable Outcome + Timeframe (e.g., Build X projects by December)"
+    >
+    </textarea>
+
+    <button type="button" class="btn-help" (click)="toggleHelp()">
+      {{ showExamples() ? 'Hide Examples' : 'Get Stuck? See Examples' }}
+    </button>
+
+    <button type="submit" [disabled]="goalForm.invalid">Add Goal</button>
+  </form>
+
+  @if (showExamples()) {
+    <div class="help-panel">
+      <h4>SMART Goal Examples</h4>
+      <ul>
+        @for (ex of examples; track ex.title) {
+          <li>
+            <strong>{{ ex.title }}:</strong> {{ ex.desc }}
+          </li>
+        }
+      </ul>
+      <p class="note">Remember: Focus on outcomes, not just "wishes"[cite: 58].</p>
+    </div>
+  }
+</div>

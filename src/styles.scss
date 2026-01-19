@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
+/* FONTS */
+.ms-madi-regular {
+  font-family: 'Ms Madi', cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --horizon-1-core: #2ecc71; /* Core survival - Stable Green */
   --horizon-2-emerging: #3498db; /* Growth paths - Explorer Blue */
@@ -15,7 +22,12 @@
 
 /* GLOBAL RULES */
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
+  padding: 0;
+  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--palette-lunette);
 }
@@ -24,14 +36,24 @@ p {
   color: var(--palette-night-assault);
 }
 
+.light-font {
+  color: var(--palette-lunette);
+}
+
+.dark-font {
+  color: var(--palette-night-assault);
+}
+
+@media (max-width: 600px) {
+}
+
 /* HEADER */
 .main-header {
   width: 100%;
-  max-height: 10vh;
+  height: 7vh;
   display: flex;
   align-items: center;
   background-color: var(--palette-stealth);
-  padding: 0 2em;
 }
 
 .logo-container {
@@ -45,13 +67,30 @@ p {
 }
 
 .logo-container p {
-  color: var(--palette-lunette);
   font-size: 1.4rem;
 }
 
-/* FONTS */
-.ms-madi-regular {
-  font-family: 'Ms Madi', cursive;
-  font-weight: 700;
-  font-style: normal;
+@media (max-width: 600px) {
+}
+
+/* MAIN */
+.content-container {
+  background-color: var(--palette-lunette);
+  min-height: 84vh;
+}
+
+@media (max-width: 600px) {
+}
+
+/* FOOTER */
+
+.main-footer {
+  width: 100%;
+  padding: 1em 0;
+  background-color: var(--palette-weappon);
+  height: 10vh;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
 }
